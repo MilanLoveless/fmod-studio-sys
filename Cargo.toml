@@ -1,0 +1,8 @@
+[package]
+name = "fmod-studio-sys"
+version = "0.1.0"
+authors = ["milanloveless"]
+edition = "2018"
+
+[build-dependencies]
+bindgen = "0.56.0"
