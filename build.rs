@@ -23,6 +23,8 @@ fn main() {
         // because it is a forward declaration
         // (this seems like the wrong way to do this)
         .blacklist_item("FMOD_DSP")
+        // Never trust Clang
+        .trust_clang_mangling(false)
         // Finish the builder and generate the bindings.
         .generate()
         // Unwrap the Result and panic on failure.
